@@ -10,3 +10,5 @@ GitHub destination: `https://github.com/mwllng/terra-garden-builder`, private re
 - Never force-push or discard unrelated work. Do not commit credentials, personal backyard photos, browser storage, or temporary test files.
 - Verify the remote commit after pushing. Report the GitHub commit link alongside the preview/deployment link when applicable. If a push fails, state that explicitly; a successful deployment alone does not mean GitHub is backed up.
 - GitHub sync is part of work performed in this project, not an unattended background service.
+
+Design continuity: keep the Taste framed-sheet garden atelier, established terracotta/green brand, original illustration and artistic brand typography. Preserve the nine-stage workflow and backward-compatible local project records. The user explicitly deferred story/game progression; do not add it until requested.

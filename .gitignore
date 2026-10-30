@@ -4,3 +4,6 @@
 .hallmark/before.txt
 .hallmark/compare.html
 dist/.hallmark/
+
+.taste-skill/before/
+.taste-skill/after/

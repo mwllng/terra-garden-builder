@@ -18,9 +18,9 @@
 /* Hallmark · reworded "What's yourstarting point?" to "Choose your starting point" · gates 19 and 54 remove repeated figurative copy */
 /* Hallmark · reworded "Your image brief." to "Your image brief" · gates 19 and 54 remove repeated figurative copy */
 @import url("tokens.css");
-@font-face{font-family:var(--font-display);src:url('assets/display.ttf')}
-@font-face{font-family:var(--font-display);src:url('assets/display-italic.ttf');font-style:italic}
-@font-face{font-family:DM;src:url('assets/body.ttf')}
+@font-face{font-family:Cormorant;src:url('assets/display.ttf');font-weight:300 700;font-display:swap}
+@font-face{font-family:Cormorant;src:url('assets/display-italic.ttf');font-style:italic;font-weight:300 700;font-display:swap}
+@font-face{font-family:DM;src:url('assets/body.ttf');font-weight:100 900;font-display:swap}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--green);font-family:var(--font-body);font-size:14px;}

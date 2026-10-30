@@ -2,6 +2,18 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.7.0 — Garden atelier, build sequence and care · 2026-10-30
+
+- Installed and applied Taste Skill (`design-taste-frontend`, tasteskill v2) from Leonxlnx/taste-skill. Chose its framed-sheet builder direction, seed 744250936, retaining Terra’s palette, artistic brand fonts and original garden illustrations.
+- Reworked Studio into nine freely accessible stages: Survey, Design, Foundations, Services, Hardscape, Planting, Furnish, Lighting and Care. Existing saved six-stage projects migrate without discarding their design or quotes.
+- Added a dressmaker-inspired material room with 207 design choices: 74 planting concepts, 64 ground finishes, 51 built/furniture/water elements and 18 lights. Search, category filters, a saved shelf, current-plan preview and click-to-place/apply all work. The three overhead light-strand tools remain separate.
+- Added a base-approach record, drainage-review state, foundation notes and conceptual build-up diagram; 27 user-reviewed planning checks across the nine phases; and custom care tasks with routine, review date, completion and removal. These are saved and included in project exports. No notification service is scheduled.
+- Kept utilities independently visible and editable. Services and lighting have separate stages, and manual layer changes no longer change the selected workflow stage.
+- Repaired invalid font-face declarations from the prior polish so the bundled Cormorant fonts actually load; increased plan-label readability and refined the editor’s responsive frame.
+- Validation: syntax for four scripts; all 143 object symbols and 64 surface textures; legacy/new save validation and migration; geometry, quantity exclusion, quotes, utility routes and night-light regressions. Browser tests covered all nine stages, foundation records/checks, water-route creation, planting-bed tool, care tasks, search, favorites, placement, finish changes, live preview, save/reload and phone layouts, with no page errors.
+- Taste audit: baseline 3 reported failures; final 0 with one documented tool false-positive allowance (`no-title`: the inspector selects the hidden homepage h1 instead of the visible studio h1). The browser confirms exactly one visible Studio title. Three design warnings are recorded in `.taste-skill/review.md`.
+- Limits: assets are conceptual design choices and illustrative supply allowances, not verified inventory or locally suitable species. Foundation and service records do not calculate construction specifications. Local installed costs remain quote-required. Story/game progression is intentionally deferred.
+
 ## 0.6.0 — Hallmark design polish · 2026-10-30
 
 - Applied Hallmark 2.0.0 from Nutlope/hallmark, keeping Terra’s requested terracotta, garden greens, artistic fonts, original illustration and four-page structure.

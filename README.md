@@ -1,6 +1,6 @@
 # Terra — Garden Studio
 
-Four responsive pages: homepage, six-step garden studio, materials pricing, and illustrated perspective visualization.
+Four responsive pages: homepage, nine-stage garden atelier, materials pricing, and illustrated perspective visualization.
 
 ## Features
 
@@ -69,3 +69,21 @@ Validation: all 85 object symbols in plan/perspective and 29 textures; independe
 ## Hallmark design polish — 30 October 2026
 
 Hallmark 2.0.0 was installed from https://github.com/Nutlope/hallmark/tree/main/skills/hallmark and applied as a polish, preserving Terra’s brand and feature wiring. Shared UI tokens live in `dist/tokens.css`; visual rules remain in `dist/style.css`. Release notes are in `CHANGELOG.md`, and audit decisions/copy changes are under `.hallmark/`. Browser captures are excluded from Git and deployment assets. Garden drawing pigments remain material data in the SVG renderer.
+
+
+## Garden atelier and build/care workflow — 30 October 2026
+
+Taste Skill source: https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill. The installed skill is `design-taste-frontend`; builder direction `framed-sheet`, seed 744250936. Terra’s user-specified terracotta/green palette and artistic brand typography are retained.
+
+`dist/atelier.js` holds the additional catalog, finish patterns, nine-phase workflow, material-room interface, foundation review records, saved shelf and personal care tasks. `dist/atelier.css` scopes the framed-sheet editor and responsive material room. Load atelier.js before layers.js, planning.js and app.js. The canvas remains the actual editable project, rather than a static mock.
+
+The full library is 207 choices (74 plants, 51 built/furniture/water elements, 18 lights, 64 surfaces), plus three light-strand types. Choices are planning concepts, not product stock or horticultural recommendations. Rates are marked sample allowances. New foundation notes/checks are not construction verification or installed-cost estimates. Maintenance dates are stored locally; no reminders are sent.
+
+The schema remains 2. `workflowVersion: 2` distinguishes nine-stage projects. Old phase indexes migrate as `0→0, 1→4, 2→5, 3→6, 4→3, 5→8`, leaving all garden geometry, assets, photos, routes and quotes intact. Added optional records (`phaseChecks`, `baseSpec`, `favorites`, `careTasks`) are validated, saved, undone/redone with the project and exported in project JSON. Old catalog identifiers are retained. A maximum of 150 objects can be placed in one plan; this is separate from the number of available designs.
+
+Planning reference material used to organize the workflow, not to produce installation instructions:
+- Minnesota DNR, site inventory, landscape planning, preparation and maintenance: https://www.dnr.state.mn.us/gardens/nativeplants/landscaping_steps.html
+- RHS, planning and preparing garden borders: https://www.rhs.org.uk/garden-design/how-to-create-a-border
+- Minnesota Stormwater Manual, sequencing construction and stabilization: https://stormwater.pca.state.mn.us/planning_scheduling_and_sequencing_for_construction
+
+Tests and visual audit outcomes are summarized in `.taste-skill/review.md`. Browser QA used synthetic local projects only. User backyard photos and browser storage are not included in the source repository. The game/story layer is deferred.
