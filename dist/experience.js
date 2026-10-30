@@ -29,3 +29,9 @@ function presentationSvg(){const e=estimate(),plan=planSnapshot(),scene=$('#pers
 function utilityChoices(){return `<div class="utility-choices" role="group" aria-label="Choose service type">${Object.entries(UTILITY_TYPES).map(([k,u])=>`<button data-utility-choice="${k}" aria-pressed="${routeKind===k}" class="${routeKind===k?'active':''}"><span class="service-swatch" style="--service-color:${u.color}"></span>${esc(u.name)}</button>`).join('')}</div>`}
 
 function quoteScopeConflict(key,scope){const rows=projectEstimate().rows;if(key==='extra:labour')return rows.some(r=>r.key!==key&&r.quote?.scope==='installed');return scope==='installed'&&rows.some(r=>r.key==='extra:labour'&&r.quote)}
+
+function bindStudioPanelSize(){
+ const panel=document.querySelector('#studio .library'),stage=document.querySelector('#garden-stage'),toolbar=document.querySelector('#studio .canvas-toolbar');
+ const sync=()=>{if(!stage.getBoundingClientRect().height)return;const height=stage.getBoundingClientRect().bottom-toolbar.getBoundingClientRect().top;panel.style.setProperty('--studio-panel-height',height+'px')};
+ new ResizeObserver(sync).observe(stage);new ResizeObserver(sync).observe(toolbar);window.addEventListener('resize',sync);window.addEventListener('hashchange',()=>requestAnimationFrame(sync));requestAnimationFrame(sync);
+}

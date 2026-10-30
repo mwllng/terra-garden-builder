@@ -38,3 +38,7 @@ The user-pinned artwork and diagram content are retained; no stock photographs, 
 ## v0.8 regional cost and selection update
 
 Preserved the framed-sheet app direction. New experience.js/experience.css/wages.js source lint: 0 FAIL, 0 WARN. Real-browser Studio inspection at 1440/768/390: 0 FAIL with the same no-title false-positive allowance and 3 existing warnings. Colored garden geometry conveys materials/data; canvas and side inspector have intentionally different heights; dense secondary notes retain smaller type. New action labels and cost fields remain readable, with explicit unknown-cost states. Reviewed desktop/mobile Studio and the budget/presentation outputs. Browser checks confirm live ZIP resolution and state-driven labor changes, selection deletion with typing protection, service selection, full plant list access, SVG validity and mobile width. Final presentation capture finishes entrance animations before screenshot; a transition-frame screenshot was replaced.
+
+## v0.8.1 panel alignment
+
+Retained the existing app direction. The left sheet follows the measured canvas height rather than viewport height; a fixed heading and scroll hint frame one scroll region. Material choices no longer nest their own scrollbar. Browser measurements confirm aligned bottoms at 1440/1024/768 and natural stacking at 390; filtering, selection and the last checklist remain reachable. Reviewed the updated desktop screenshot.

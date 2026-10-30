@@ -2,6 +2,12 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.8.1 — Canvas-aligned design choices · 2026-10-30
+
+- Match the desktop/tablet left choices panel to the actual central canvas height using a resize observer, replacing its viewport-based height cap. Keep the step heading and scroll guidance visible while choices/checks scroll in one region, without a second nested material-list scrollbar.
+- Rename Hardscape to Paving & structures, clarify the ground filter and explain which surfaces change when selecting a finish. Keep phone controls in normal document flow.
+- Validation: Chrome at 1440, 1024 and 768 px measured zero-pixel difference between panel and canvas bottom; 390 px remains a full-height stacked layout. Material filtering/selection and scrolling to the last checklist were verified; no horizontal overflow or page errors. Reviewed desktop screenshot and repeated the Taste audit with the existing documented title allowance.
+
 ## 0.8.0 — Regional budget and usable design tools · 2026-10-30
 
 - Five-digit ZIP entry automatically resolves location and recalculates regional labor estimates. Bundled 2025 BLS/O*NET wage snapshots cover 50 states and DC; editable worker-hours, contractor factor, site factor and ZIP-scoped hourly overrides expose the assumptions. No live retailer price feed is connected.
