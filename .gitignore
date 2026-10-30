@@ -1,0 +1,6 @@
+.hallmark/before/
+.hallmark/shots/
+.hallmark/before.json
+.hallmark/before.txt
+.hallmark/compare.html
+dist/.hallmark/

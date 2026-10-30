@@ -1,0 +1,24 @@
+{
+  "scanned": "2026-10-30",
+  "findings": {
+    "fonts": "Cormorant Garamond + DM Sans, dist/style.css:1; bundled in dist/assets",
+    "palette": "Terracotta #a63e2e, garden green #294331, paper #f5f1e7, dist/style.css:1",
+    "framework": "Buildless HTML and JavaScript, dist/index.html:23",
+    "routes": "Home is a page; Studio, Budget, Preview are app screens",
+    "motion": "Existing CSS keyframes and reduced-motion fallback"
+  },
+  "preserve": [
+    "Palette",
+    "Fonts",
+    "Original garden illustration",
+    "All four routes and event wiring",
+    "Three design layers"
+  ],
+  "introduce": [
+    "Readable sentence-case labels",
+    "Direct planning copy",
+    "Color and font tokens",
+    "Accessible interaction states"
+  ],
+  "scope": "polish"
+}

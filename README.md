@@ -1,4 +1,4 @@
-# Terra — Garden Studio, version 2
+# Terra — Garden Studio
 
 Four responsive pages: homepage, six-step garden studio, materials pricing, and illustrated perspective visualization.
 
@@ -64,3 +64,8 @@ The library now includes 44 planting concepts, 31 construction/furnishing/water 
 Overhead lighting now supports editable festoon, fairy-light and LED strands with multiple anchors, visual height, spacing and sag, plus night bulb/glow rendering. Supply allowances are measured per planned span; installation, circuits and structural anchor design remain unpriced and require review.
 
 Validation: all 85 object symbols in plan/perspective and 29 textures; independent layer isolation; editable planned gas sketches; multi-bulb night strands; strand cost rows; old and new project validation; existing geometry and quote isolation tests. Browser checks verified creating water/gas/electrical routes, dragging a gas endpoint with length update and saved recovery, pipes drawn after objects, grass-library search, string strands with night bulbs, exploded perspective, and 390 px mobile layout. Exported underground SVG was parsed and verified to include routes and exclude above-ground items.
+
+
+## Hallmark design polish — 30 October 2026
+
+Hallmark 2.0.0 was installed from https://github.com/Nutlope/hallmark/tree/main/skills/hallmark and applied as a polish, preserving Terra’s brand and feature wiring. Shared UI tokens live in `dist/tokens.css`; visual rules remain in `dist/style.css`. Release notes are in `CHANGELOG.md`, and audit decisions/copy changes are under `.hallmark/`. Browser captures are excluded from Git and deployment assets. Garden drawing pigments remain material data in the SVG renderer.

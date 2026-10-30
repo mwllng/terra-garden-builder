@@ -2,6 +2,15 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.6.0 — Hallmark design polish · 2026-10-30
+
+- Applied Hallmark 2.0.0 from Nutlope/hallmark, keeping Terra’s requested terracotta, garden greens, artistic fonts, original illustration and four-page structure.
+- Replaced repetitive slogans and mixed italic headings with direct garden-planning copy. Removed redundant eyebrow labels, decorative badges and flourishes; retained a directional icon on navigation cards.
+- Improved interface type size, sentence-case labels, control states, focus contrast, form edges, mobile readability and capped page widths. Extracted shared CSS palette, font and spacing tokens.
+- Preserved all three design layers, utility editing, plant/material libraries, lighting, costs, save/export behavior and deployment audience.
+- Validation: JavaScript syntax; existing layer/geometry/quote regression checks; Hallmark desktop/mobile rendering for all four routes; retained 5/5 links, 45/45 fields and 7/7 script hooks. A separate visual review’s link-affordance finding was fixed.
+- The requested brand palette and illustrated garden diagrams are retained as documented Hallmark exceptions. Existing concept-model limitations remain unchanged.
+
 ## Version tracking — 2026-10-30
 
 - Added these release notes and a durable project instruction to push future completed website updates and their notes to GitHub.
