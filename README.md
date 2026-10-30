@@ -52,3 +52,15 @@ References:
 - Utility locating: https://www.enbridge.com/projects-and-infrastructure/public-awareness/safe-digging-and-damage-prevention/call-811
 
 Validation: syntax checks; 45 non-empty catalog icons; path and pool surface exclusion; unknown pool prices; ZIP quote isolation; quote invalidation on changed size; service route length; source-required service records; and old-project migration. Browser verified pool placement, category filtering, ZIP 10001 → New York City/NY, quote recording, walkway creation, utility choices, perspective rendering and 390 px studio/budget sizing.
+
+## Three-layer visibility and expanded library
+
+The editor now exposes Ground, Above ground and Underground as independent visibility layers with isolation presets plus All layers. Above-ground drawings have footprint outlines, readable name labels and zoom. Underground routes render after every object in combined plan view, and get a dedicated isolated engineering-style sheet with service names, lengths and draggable nodes. Direct planned-route sketches are available at the top of the underground view, including on mobile. Empty projects explicitly report that no services have been recorded; no actual utility positions are invented.
+
+The perspective has an exploded service plane for visibility. Its vertical offset is a diagram convention, not a real burial depth. Shared SVG resources were namespaced per drawing and thumbnail, fixing hidden resource collisions between plan and perspective. The current visible drawing can be exported as a standalone SVG sheet.
+
+The library now includes 44 planting concepts, 31 construction/furnishing/water elements, 10 individual light choices and 29 ground finishes. New concepts include ornamental trees, flower borders, ferns, sedges/grasses, edible beds, gates, trellises, furniture and additional paving textures. These are design options and illustrative allowances, not verified nursery/product stock or species recommendations. Search and categories are available.
+
+Overhead lighting now supports editable festoon, fairy-light and LED strands with multiple anchors, visual height, spacing and sag, plus night bulb/glow rendering. Supply allowances are measured per planned span; installation, circuits and structural anchor design remain unpriced and require review.
+
+Validation: all 85 object symbols in plan/perspective and 29 textures; independent layer isolation; editable planned gas sketches; multi-bulb night strands; strand cost rows; old and new project validation; existing geometry and quote isolation tests. Browser checks verified creating water/gas/electrical routes, dragging a gas endpoint with length update and saved recovery, pipes drawn after objects, grass-library search, string strands with night bulbs, exploded perspective, and 390 px mobile layout. Exported underground SVG was parsed and verified to include routes and exclude above-ground items.
