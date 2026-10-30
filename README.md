@@ -10,11 +10,13 @@ Four responsive pages: homepage, nine-stage garden atelier, materials pricing, a
 - Backyard photo reference and soil overlays; images stay in this device's IndexedDB.
 - Night/day, light halos and seasonal color palettes.
 - Undo/redo, local autosave, editable project JSON, SVG layout/perspective exports, image prompts.
-- Quantity-based example costs, target budget, reserve and phased checklist.
+- Quantity-based supply allowances and ZIP-matched quotes, regional labor ranges, editable hours/rates, target budget and combined reserve.
+- Visible service tools, a filterable placed-object list, keyboard deletion and undo/redo.
+- Garden / technical presentation modes, plan/material/plant board, SVG presentation and print/PDF layout.
 
 ## Limits
 
-Live photorealistic AI, local quotes, retailer catalogs, climate matching and accounts are not connected. The perspective is an illustrated SVG. Photos are manually aligned references, not measured surveys. Lighting and seasons are visual studies.
+Live photorealistic AI, automatic retailer quotes, inventory feeds, climate matching and accounts are not connected. Users can record their own ZIP-matched quotes. ZIP lookup automatically selects an annual state-level labor benchmark; it does not retrieve live local material prices. See [WAGE-DATA.md](WAGE-DATA.md) for sources, attribution and modeling assumptions. The perspective is an illustrated SVG. Photos are manually aligned references, not measured surveys. Lighting and seasons are visual studies.
 
 ## Validation
 

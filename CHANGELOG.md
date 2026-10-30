@@ -2,6 +2,16 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.8.0 — Regional budget and usable design tools · 2026-10-30
+
+- Five-digit ZIP entry automatically resolves location and recalculates regional labor estimates. Bundled 2025 BLS/O*NET wage snapshots cover 50 states and DC; editable worker-hours, contractor factor, site factor and ZIP-scoped hourly overrides expose the assumptions. No live retailer price feed is connected.
+- Split the budget into supply, installed bundles, possible labor, other recorded costs and a combined reserve. ZIP-matched quotes override sample allowances; installed quotes suppress matching labor. Whole-project labor replaces modeled labor, with overlap checks for installed bundles. Unknown scopes remain visibly unpriced.
+- Fixed the service-type dropdown binding; added readable service buttons, visible finish/cancel drawing controls, full-library entry buttons and a filterable list of placed plants, objects, ground, services and lights.
+- Delete/Backspace removes selected objects, beds, paths, utility routes or light strands. Typing fields and dialogs are protected; undo/redo restores edits.
+- Added Garden / Technical presentation modes, a plan/material/plant/cost board, standalone SVG presentation download and print/save-PDF layout. Presentation rendering preserves saved technical layer choices.
+- Validation: cost formulas, state differences, ZIP quote isolation, installed-quote handling, custom/stale hours, DIY and specialist gaps; full previous atelier browser regression; live ZIP lookup for New York and Florida; keyboard/input protection, service drawing, plant list, presentation SVG XML and preserved layers; phone layouts and no browser page errors.
+- Limits: regional employee wages are annual state-level benchmarks, not ZIP-level contractor offers. The default 2× factor and task hours are editable Terra assumptions. Specialist work and missing supplies require quotes. Presentation is illustrative, not photorealistic.
+
 ## 0.7.0 — Garden atelier, build sequence and care · 2026-10-30
 
 - Installed and applied Taste Skill (`design-taste-frontend`, tasteskill v2) from Leonxlnx/taste-skill. Chose its framed-sheet builder direction, seed 744250936, retaining Terra’s palette, artistic brand fonts and original garden illustrations.
