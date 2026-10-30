@@ -2,6 +2,12 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.8.2 — Labels on selection · 2026-10-30
+
+- Hide plant/object name-and-size labels by default, including existing saved projects on first upgrade. Selecting an object displays its label; deselecting hides it. Keep an explicit Show all object labels option under Visibility & zoom for users who need the full annotated plan.
+- Preserve object accessibility names, inspector details, geometry, pricing and utility-view annotations.
+- Validation: script syntax and browser checks for initial hidden labels, selection/deselection, explicit all-label override and saved-project reload.
+
 ## 0.8.1 — Canvas-aligned design choices · 2026-10-30
 
 - Match the desktop/tablet left choices panel to the actual central canvas height using a resize observer, replacing its viewport-based height cap. Keep the step heading and scroll guidance visible while choices/checks scroll in one region, without a second nested material-list scrollbar.
