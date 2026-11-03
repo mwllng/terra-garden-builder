@@ -2,6 +2,12 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.8.4 — Visible Studio budget · 2026-11-03
+
+- Move the live project estimate to the top of the right inspector, above object details and layout warnings. On desktop, details scroll separately so the estimate remains visible.
+- Show the combined material/labor/reserve range, supply, installed bundles when present, labor, other recorded costs when present, reserve and unpriced scope counts. Reuse the same estimate model as the Budget page; keep a direct link to detailed rates and quotes.
+- Validation: syntax; Chrome at 1440/1024/390 px confirmed correct totals and no horizontal overflow; selection retains budget and changing garden dimensions updates it.
+
 ## 0.8.3 — Public GitHub Pages launch · 2026-11-03
 
 - Publish the static dist directory using GitHub Pages and an Actions deployment on main pushes. Repository made public with user authorization; write permissions remain restricted to authorized collaborators.

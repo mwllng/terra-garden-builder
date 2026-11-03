@@ -97,3 +97,12 @@
 #studio .library .library-scroll-hint{flex:none;font-size:12px!important;color:var(--atelier-muted);margin:10px 0 0;padding-top:10px;border-top:1px solid var(--atelier-rule)}
 #studio .ground-instruction{margin:8px 0 12px}
 @media(max-width:760px){#studio .library{height:auto}#studio .library-scroll{overflow:visible}#studio .library .library-scroll-hint{display:none}}
+
+#studio .inspector .budget-peek{border:0;border-bottom:1px solid var(--atelier-rule);margin:0 0 16px;padding:0 0 16px;flex:none}
+#studio .budget-peek>span{font-size:14px;font-weight:600}
+#studio .budget-peek #studio-cost{font:600 22px/1.35 var(--font-body);font-variant-numeric:tabular-nums;margin:8px 0 12px;overflow-wrap:anywhere}
+#studio #studio-cost-breakdown>div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:7px 0;font-size:12px}
+#studio #studio-cost-breakdown b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
+#studio #studio-cost-note{font-size:12px!important;line-height:1.5;margin:12px 0}
+@media(min-width:1101px){#studio .inspector{height:var(--studio-panel-height,640px);max-height:none;display:flex;flex-direction:column;overflow:hidden;position:sticky;top:12px}#studio .inspector-scroll{flex:1;min-height:0;overflow-y:auto;scrollbar-gutter:stable}}
+@media(max-width:1100px){#studio .inspector{height:auto}#studio .inspector-scroll{overflow:visible}}

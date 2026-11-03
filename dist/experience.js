@@ -32,6 +32,13 @@ function quoteScopeConflict(key,scope){const rows=projectEstimate().rows;if(key=
 
 function bindStudioPanelSize(){
  const panel=document.querySelector('#studio .library'),stage=document.querySelector('#garden-stage'),toolbar=document.querySelector('#studio .canvas-toolbar');
- const sync=()=>{if(!stage.getBoundingClientRect().height)return;const height=stage.getBoundingClientRect().bottom-toolbar.getBoundingClientRect().top;panel.style.setProperty('--studio-panel-height',height+'px')};
+ const sync=()=>{if(!stage.getBoundingClientRect().height)return;const height=stage.getBoundingClientRect().bottom-toolbar.getBoundingClientRect().top;panel.style.setProperty('--studio-panel-height',height+'px');document.querySelector('#studio .inspector').style.setProperty('--studio-panel-height',height+'px')};
  new ResizeObserver(sync).observe(stage);new ResizeObserver(sync).observe(toolbar);window.addEventListener('resize',sync);window.addEventListener('hashchange',()=>requestAnimationFrame(sync));requestAnimationFrame(sync);
+}
+
+function renderStudioBudget(){
+ const e=estimate();$('#studio-cost').textContent=costRange(e.planningLow,e.planningHigh);
+ const rows=[['Materials / supply',money(e.breakdown.supply)],['Supply + install',money(e.breakdown.bundled)],['Possible labor',e.labor.packageQuoted?money(e.labor.packageAmount):costRange(e.labor.low,e.labor.high)],['Other recorded',money(e.breakdown.other)],['Reserve ('+S.reserve+'%)',costRange(e.planningReserveLow,e.planningReserveHigh)]];
+ $('#studio-cost-breakdown').innerHTML=rows.filter((r,i)=>i!==1||e.breakdown.bundled>0).filter((r,i)=>r[0]!=='Other recorded'||e.breakdown.other>0).map(([label,value])=>'<div><span>'+esc(label)+'</span><b>'+esc(value)+'</b></div>').join('');
+ $('#studio-cost-note').textContent='Incomplete estimate · '+e.unknown+' supply/site and '+e.labor.unknown+' labor scopes unpriced. '+(S.zip?'ZIP '+S.zip+' · '+e.labor.market.name+'.':'Add a ZIP for regional labor.');
 }
