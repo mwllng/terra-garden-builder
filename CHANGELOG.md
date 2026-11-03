@@ -2,6 +2,12 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.8.3 — Public GitHub Pages launch · 2026-11-03
+
+- Publish the static dist directory using GitHub Pages and an Actions deployment on main pushes. Repository made public with user authorization; write permissions remain restricted to authorized collaborators.
+- Preserve the prior host and document JSON project transfer between origins, since device storage does not automatically move between domains.
+- Checked tracked-file inventory, credential patterns and relative asset paths before launch.
+
 ## 0.8.2 — Labels on selection · 2026-10-30
 
 - Hide plant/object name-and-size labels by default, including existing saved projects on first upgrade. Selecting an object displays its label; deselecting hides it. Keep an explicit Show all object labels option under Visibility & zoom for users who need the full annotated plan.

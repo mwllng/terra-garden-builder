@@ -89,3 +89,7 @@ Planning reference material used to organize the workflow, not to produce instal
 - Minnesota Stormwater Manual, sequencing construction and stabilization: https://stormwater.pca.state.mn.us/planning_scheduling_and_sequencing_for_construction
 
 Tests and visual audit outcomes are summarized in `.taste-skill/review.md`. Browser QA used synthetic local projects only. User backyard photos and browser storage are not included in the source repository. The game/story layer is deferred.
+
+## Public launch
+
+Website: https://mwllng.github.io/terra-garden-builder/ . GitHub Actions deploys `dist/` on pushes to main. This is a public static site and public source repository; only authorized collaborators can write to this repository. Existing designs stay in the browser storage of their original site origin. To move a design from the earlier host, download the project there and open it in the new site's Survey step. Browser storage does not transfer across domains automatically.

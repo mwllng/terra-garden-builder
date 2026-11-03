@@ -2,9 +2,9 @@
 
 The user requests that every website update also be saved to GitHub with notes.
 
-GitHub destination: `https://github.com/mwllng/terra-garden-builder`, private repository, remote `github`, branch `main`.
+GitHub destination: `https://github.com/mwllng/terra-garden-builder`, public repository, remote `github`, branch `main`.
 
-- Preserve the existing local Git history and Sites deployment workflow.
+- Preserve the existing local Git history. GitHub Pages is the public launch destination; pushes to main deploy dist through .github/workflows/pages.yml. Keep the existing Sites configuration as a retained prior host.
 - For each completed website update, update CHANGELOG.md with the changes, relevant validation, and remaining limitations. Use meaningful commit messages.
 - Push the completed update and its notes to the configured GitHub remote. If no destination is configured, obtain the repository URL from the user. Do not use an unrelated repository.
 - Never force-push or discard unrelated work. Do not commit credentials, personal backyard photos, browser storage, or temporary test files.
