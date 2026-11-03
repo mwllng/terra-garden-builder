@@ -2,6 +2,12 @@
 
 Versions below retrospectively name the five existing website snapshots. The commit IDs are the original saved history; their commit messages have not been rewritten. Dates use America/New_York.
 
+## 0.8.5 — Estimate placement at every width · 2026-11-03
+
+- Fix the stacked layout: at tablet and phone widths the estimate panel now comes before the canvas instead of after all editing controls. Desktop keeps the estimate at the top right.
+- Add content fingerprints to CSS/JS URLs so browser caches do not mix the current HTML with an earlier layout or budget script.
+- Verify actual public layout at desktop, tablet and phone widths after publication.
+
 ## 0.8.4 — Visible Studio budget · 2026-11-03
 
 - Move the live project estimate to the top of the right inspector, above object details and layout warnings. On desktop, details scroll separately so the estimate remains visible.
